@@ -1,0 +1,42 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: multilingual-ai-backend
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/multilingual_ai}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:1234}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: ${JPA_DDL_AUTO:update}
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  servlet:
+    multipart:
+      max-file-size: ${MAX_UPLOAD_SIZE:25MB}
+      max-request-size: ${MAX_UPLOAD_SIZE:25MB}
+
+ai:
+  service:
+    base-url: ${AI_SERVICE_URL:http://localhost:8000}
+    connect-timeout-ms: ${AI_SERVICE_CONNECT_TIMEOUT_MS:5000}
+    read-timeout-ms: ${AI_SERVICE_READ_TIMEOUT_MS:60000}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+logging:
+  level:
+    root: INFO
+    com.multilingualai.backend: DEBUG

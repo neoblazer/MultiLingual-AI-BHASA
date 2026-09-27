@@ -1,0 +1,93 @@
+.auth {
+  max-width: 380px;
+  margin: 4rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.auth__card {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  padding: 2rem;
+}
+
+.auth__title {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.auth__sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 1.75rem;
+}
+
+.auth__field {
+  margin-bottom: 1rem;
+}
+
+.auth__field label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.auth__field input {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  background: var(--paper);
+}
+
+.auth__field input:focus {
+  outline: none;
+  border-color: var(--indigo);
+  background: #fff;
+}
+
+.auth__submit {
+  width: 100%;
+  padding: 0.7rem;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.15s ease;
+}
+
+.auth__submit:hover {
+  background: var(--indigo);
+}
+
+.auth__footer {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 1.5rem;
+}
+
+.auth__footer a {
+  color: var(--indigo);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth__note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,80 @@
+﻿# ===================================
+# Python (ai-service)
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Model caches / downloaded weights (large, never commit)
+*.bin
+*.safetensors
+*.pt
+*.onnx
+.cache/
+huggingface/
+
+# ===================================
+# Java / Spring Boot (backend)
+# ===================================
+target/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+!**/src/main/**
+!**/src/test/**
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# ===================================
+# Node / React (frontend)
+# ===================================
+node_modules/
+build/
+dist/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===================================
+# Environment files (never commit secrets/config)
+# ===================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ===================================
+# OS / Editor junk
+# ===================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ===================================
+# Temp / runtime data
+# ===================================
+*.log
+tmp/
+temp/
+*.wav
+!frontend/public/**/*.wav

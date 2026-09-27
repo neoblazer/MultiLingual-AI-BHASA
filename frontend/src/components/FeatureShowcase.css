@@ -1,0 +1,132 @@
+.showcase {
+  max-width: 880px;
+  margin: 3.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.showcase__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.showcase__title {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+
+.showcase__sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .showcase__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-card {
+  position: relative;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  padding: 1.25rem 1.35rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--indigo);
+  transform: translateY(-1px);
+}
+
+.feature-card__badge {
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  background: var(--indigo-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.feature-card__icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.feature-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  padding-right: 4.5rem;
+}
+
+.feature-card__desc {
+  font-size: 0.87rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ---- Modal ---- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 26, 36, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 50;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 6px;
+  max-width: 420px;
+  width: 100%;
+  padding: 1.75rem;
+}
+
+.modal__title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem;
+}
+
+.modal__body {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.modal__close {
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.2rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  background: var(--indigo);
+}

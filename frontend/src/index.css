@@ -1,0 +1,42 @@
+:root {
+  --ink: #161a24;
+  --paper: #faf7f1;
+  --indigo: #3d4fe0;
+  --indigo-dim: #e7e9fb;
+  --amber: #e4982e;
+  --amber-dim: #fbebd3;
+  --line: #e3dfd6;
+  --muted: #7a7f8a;
+  --danger: #c4432f;
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+button {
+  font-family: inherit;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
